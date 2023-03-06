@@ -1,0 +1,69 @@
+@-moz-document domain("gelbooru.com") {
+    /* ==UserStyle==
+    @name Gelbooru Catppuccin-Latte
+    @namespace https://github.com/vanillyn
+    @description Soothing pastel theme for Gelbooru.
+    @preprocessor stylus
+    @author Vanillyn
+    @license GNU-V3.0
+    @version 0.9
+    
+    ==/UserStyle== */
+    
+    :root {
+        --accent: #1e66f5;
+    }
+    * {
+        border: none !important;
+        color: #4c4f69 !important;
+    }
+    
+    .topnav, .searchArea, .searchList, .commentBody {
+        background-color: #dce0e8;
+        color: #4c4f69 !important;
+    }
+    .navSubmenu, .ui-autocomplete-input {
+        background-color: #e6e9ef;
+        color: #4c4f69 !important;
+    }
+    .thumbnail-container, .alert, .alert-info, .aside, div#container {
+        background-color: #eff1f5;
+    }
+    .footerAd {
+        display: none;
+    }
+    footer {
+        background-color: #eff1f5 !important;
+    }
+    .topnav a.active {
+        background-color: #dce0e8;
+        color: var(--accent) !important;
+    }
+    .tag-type-artist > a, a.tag-type-artist {
+        color: #d20f39 !important;
+    }
+    .tag-type-copyright > a, a.tag-type-copyright {
+        color: #8839ef !important;
+    }
+    .tag-type-character > a, a.tag-type-character {
+        color: #40a02b !important;
+    }
+    .tag-type-tag, .tag-type-general > a, a.tag-type-tag {
+        color: #04a5e5 !important;
+    }
+    .tag-type-metadata > a, a.tag-type-metadata {
+        color: #fe640b !important;
+    }
+    .tag-type-deprecated > a, a.tag-type-deprecated {
+        color: #a6adc8 !important;
+    }
+    #links {
+        color: var(--accent) !important;
+    }
+    .thumbnail-preview {
+        transition: transform 1s;
+    }
+    .thumbnail-preview:hover{
+        transform: scale(1.5);
+    }
+    }
